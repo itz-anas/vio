@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Vio</title>
+  <meta name="description" content="Connect with Vio. View my personal portfolio, professional profiles, code repositories, and collaboration forms in one place.">
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta property="og:title" content="Vio | Links & Portfolio">
+  <meta property="og:description" content="Explore my personal portfolio, LinkedIn, GitHub, and collaboration forms.">
+  <meta property="og:image" content="/profile.png">
+  <meta property="og:type" content="website">
+  
+  <!-- Tab Icon / Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Orbs -->
+  <div class="bg-orb bg-orb-1" id="orb-1"></div>
+  <div class="bg-orb bg-orb-2" id="orb-2"></div>
+  <div class="bg-orb bg-orb-3" id="orb-3"></div>
+  
+  <!-- Interactive Ripple Container -->
+  <div class="ripple-container" id="ripple-container"></div>
+
+  <!-- Main App Wrapper (Simulates phone center card on desktop) -->
+  <main class="app-container" id="app-container">
+    
+    <!-- Top Bar Navigation (Floats absolute on top of the hero image) -->
+    <header class="top-nav">
+      <button class="nav-btn" id="theme-toggle" aria-label="Toggle visual style" title="Toggle background effect">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap">
+          <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+        </svg>
+      </button>
+      
+      <button class="nav-btn" id="share-btn" aria-label="Share this profile" title="Copy profile URL">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share-2">
+          <circle cx="18" cy="5" r="3"></circle>
+          <circle cx="6" cy="12" r="3"></circle>
+          <circle cx="18" cy="19" r="3"></circle>
+          <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+          <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+        </svg>
+      </button>
+    </header>
+
+    <!-- Profile Hero Section (Big Banner Image) -->
+    <section class="profile-hero">
+      <img src="profile.png" alt="Vio Profile Background" class="hero-image" id="profile-avatar">
+      <div class="hero-overlay"></div>
+      
+      <div class="profile-content">
+        <h1 class="profile-name">MOHAMMED ANAS</h1>
+        <p class="profile-bio">Developer. Building interactive web experiences.</p>
+        <div class="verified-pill">
+          <span class="verified-check-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+            </svg>
+          </span>
+          <span>Verified</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Links List -->
+    <section class="links-list" id="links-list">
+      
+      <!-- Link 1: Personal Portfolio -->
+      <a href="https://mydevxportfolio.vercel.app/" target="_blank" rel="noopener noreferrer" class="link-card" id="link-portfolio" style="--brand-color: #8a2be2; --brand-glow: rgba(138, 43, 226, 0.45); --card-grad: linear-gradient(135deg, #7c1ad9 0%, #a04ef6 100%);">
+        <div class="link-card-glow"></div>
+        <div class="link-left">
+          <div class="icon-wrapper">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="card-icon">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+          </div>
+          <div class="link-details">
+            <h2 class="link-title">Personal Portfolio</h2>
+            <p class="link-description">My projects, skills, and creative works</p>
+          </div>
+        </div>
+        <div class="link-right">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </div>
+      </a>
+
+      <!-- Link 2: LinkedIn -->
+      <a href="https://www.linkedin.com/in/mohammedanas16/" target="_blank" rel="noopener noreferrer" class="link-card" id="link-linkedin" style="--brand-color: #0077b5; --brand-glow: rgba(0, 119, 181, 0.45); --card-grad: linear-gradient(135deg, #006097 0%, #0087cb 100%);">
+        <div class="link-card-glow"></div>
+        <div class="link-left">
+          <div class="icon-wrapper">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="card-icon">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+          </div>
+          <div class="link-details">
+            <h2 class="link-title">LinkedIn</h2>
+            <p class="link-description">Connect for work and opportunities</p>
+          </div>
+        </div>
+        <div class="link-right">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </div>
+      </a>
+
+      <!-- Link 3: GitHub -->
+      <a href="https://github.com/itz-anas" target="_blank" rel="noopener noreferrer" class="link-card" id="link-github" style="--brand-color: #333; --brand-glow: rgba(0, 0, 0, 0.45); --card-grad: linear-gradient(135deg, #1f2327 0%, #3e444b 100%);">
+        <div class="link-card-glow"></div>
+        <div class="link-left">
+          <div class="icon-wrapper">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="card-icon">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </div>
+          <div class="link-details">
+            <h2 class="link-title">GitHub</h2>
+            <p class="link-description">Open-source code and projects</p>
+          </div>
+        </div>
+        <div class="link-right">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </div>
+      </a>
+
+      <!-- Link 4: Gmail -->
+      <a href="mailto:anasali0029@gmail.com" class="link-card" id="link-gmail" style="--brand-color: #ea4335; --brand-glow: rgba(234, 67, 53, 0.45); --card-grad: linear-gradient(135deg, #c7291c 0%, #f05a4f 100%);">
+        <div class="link-card-glow"></div>
+        <div class="link-left">
+          <div class="icon-wrapper">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="card-icon">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </div>
+          <div class="link-details">
+            <h2 class="link-title">Gmail</h2>
+            <p class="link-description">anasali0029@gmail.com</p>
+          </div>
+        </div>
+        <div class="link-right">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </div>
+      </a>
+
+      <!-- Link 5: Google Form -->
+      <!-- <a href="link" target="_blank" rel="noopener noreferrer" class="link-card" id="link-google-form" style="--brand-color: #7248b9; --brand-glow: rgba(114, 72, 185, 0.45); --card-grad: linear-gradient(135deg, #5931a0 0%, #8558d7 100%);">
+        <div class="link-card-glow"></div>
+        <div class="link-left">
+          <div class="icon-wrapper">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="card-icon">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+          </div>
+          <div class="link-details">
+            <h2 class="link-title">Collaboration Form</h2>
+            <p class="link-description">Fill a quick request to start working together</p>
+          </div>
+        </div>
+        <div class="link-right">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </div>
+      </a>
+
+    </section> -->
+
+    <!-- App Footer -->
+    <footer class="app-footer">
+      <p class="copyright">© 2026 Link through this. All rights reserved.</p>
+    </footer>
+    
+  </main>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast-notification">
+    <div class="toast-content">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="toast-icon">
+        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+      </svg>
+      <span class="toast-message">Profile link copied to clipboard!</span>
+    </div>
+  </div>
+
+  <!-- JavaScript File -->
+  <script type="module" src="main.js"></script>
+</body>
+</html>

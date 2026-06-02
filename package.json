@@ -1,0 +1,14 @@
+{
+  "name": "link-in-bio-portfolio",
+  "version": "1.0.0",
+  "description": "Premium Mobile-first Link-in-Bio Portfolio Web Application",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0"
+  }
+}
